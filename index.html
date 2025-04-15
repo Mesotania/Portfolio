@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .profile-pic {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #fff;
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    }
+    body {
+      background: url('./images/compsci.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .bg-overlay {
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+    /* Make navbar slightly transparent */
+    .navbar {
+      background-color: rgba(30, 102, 210, 0.9) !important;
+    }
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(0px);
+      transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    }
+    .fade-in-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    #navbar {
+      transition: opacity 0.2s ease;
+      opacity: 1;
+    }
+    #navbar:not(:hover) {
+      opacity: 0;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">AJ Lowel Ascares</a>
+      <button class="navbar-toggler text-success border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#background">Background</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+  <!-- Profile Card -->
+  <div class="card shadow mt-5 fade-in-section mx-auto text-center text-white" style="max-width: 530px;">
+    <div class="card-body">
+      <img src="./images/profile.jpg" alt="Profile Picture" class="profile-pic mb-3">
+      <h1 class="mt-3 text-dark">AJ Lowel Ascares</h1>
+      <h3 class="text-dark">BS-IT</h3>
+      <div class="d-flex justify-content-center flex-wrap gap-2 my-3">
+        <span class="badge bg-primary fs-6">Web Developer</span>
+        <span class="badge bg-success fs-6">Software Developer</span>
+        <span class="badge bg-warning text-dark fs-6">Freelancer</span>
+        <span class="badge bg-secondary fs-6">Cybersecurity</span>
+      </div>
+
+      <div class="d-flex justify-content-center gap-3">
+        <a href="https://github.com/Mesotania" class="text-dark fs-1"><i class="bi bi-github"></i></a>
+        <a href="https://www.facebook.com/aj.lowel.ascares.2024" class="text-dark fs-1"><i class="bi bi-facebook"></i></a>
+        <a href="https://x.com/ascaresa" class="text-dark fs-1"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+ <!-- Background Section -->
+<div class="container mt-5 fade-in-section " id="background">
+  <div class="card shadow">
+    <div class="card-body p-4">
+      <h2 class="card-title mb-4 text-center">Background</h2>
+      <p class="card-text fs-5">Hello! I'm AJ Lowel Ascares, a passionate web, software, and game developer graduated from
+        Bachelor of Science in Information Technology. I have a strong foundation in programming languages such as HTML, CSS, 
+        JavaScript, and C#. I am also proficient in using frameworks like Node.js and Unity for game development.
+        My journey in technology has been fueled by a desire to create innovative solutions that enhance user experiences. 
+        I am always eager to learn new technologies and improve my skills.  
+        </p>
+    </div>
+  </div>
+</div>
+<!-- Projects Section -->
+<div class="container mt-5 fade-in-section" id="projects">
+  <div class="card shadow">
+    <div class="card-body p-4">
+      <h2 class="card-title mb-4 text-center">Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm h-100">
+            <img src="./images/StarBuko.png" class="card-img-top" alt="StarBuko App">
+            <div class="card-body">
+              <h5 class="card-title">StarBuko App</h5>
+              <p class="card-text">This project is a replica of starbucks windows form app with login users for buyers
+                and admin. It is still on developmet and more bugs to fix.</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm h-100">
+            <img src="./images/calculator.png" class="card-img-top" alt="Calculator App">
+            <div class="card-body">
+              <h5 class="card-title">Web Calculator</h5>
+              <p class="card-text">This is my first project when making website using html, css, and 
+              javascript when I'am bored and nothing to do.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm h-100">
+            <img src="./images/trainticket.png" class="card-img-top" alt="Train Ticketing System">
+            <div class="card-body">
+              <h5 class="card-title">Train Ticketing System GUI Java</h5>
+              <p class="card-text">This is my simple java project for train ticketing sytem with GUI elements </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for previewing the projects-->
+<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projectModalLabel">Project Preview</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" alt="Project Image" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Skills Section -->
+<div class="container mt-5 fade-in-section" id="skills">
+  <div class="card shadow">
+    <div class="card-body p-4">
+      <h2 class="card-title mb-4 text-center">Skills</h2>
+      <p class="text-dark">Over the years, I have acquired various skills through training 
+        and developing numerous projects, including creating games in Unity and developing 
+        applications during my college years</p>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h5><i class="bi bi-code-slash text-primary me-2"></i>HTML</h5>
+          <div class="progress">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h5><i class="bi bi-palette text-success me-2"></i>CSS</h5>
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h5><i class="bi bi-lightning-charge text-warning me-2"></i>JavaScript</h5>
+          <div class="progress">
+            <div class="progress-bar bg-warning text-dark" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h5><i class="bi bi-box-arrow-in-right text-info me-2"></i>C#</h5>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h5><i class="bi bi-server text-secondary me-2"></i>Node.js</h5>
+          <div class="progress">
+            <div class="progress-bar bg-secondary" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h5><i class="bi bi-cup-hot text-danger me-2"></i>Java</h5>
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h5><i class="bi bi-braces text-danger me-2"></i>PHP</h5>
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h5><i class="bi bi-brush text-danger me-2"></i>Photoshop</h5>
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+          </div>
+        </div>
+        <hr class="my-4">
+        <div class="row text-center">
+          <div class="col-md-4 mb-3">
+            <i class="bi bi-code-slash fs-1 text-info"></i>
+            <h5 class="mt-2">Web Development</h5>
+            <p>HTML, CSS, JavaScript, React</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <i class="bi bi-server fs-1 text-warning"></i>
+            <h5 class="mt-2">Backend Development</h5>
+            <p>Node.js, Express, MongoDB</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <i class="bi bi-controller fs-1 text-dark"></i>
+            <h5 class="mt-2">Game Development</h5>
+            <p>Unity, Renpy, Unreal Engine</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <i class="bi bi-shield-fill-check fs-1 text-primary"></i>
+            <h5 class="mt-2">Cybersecurity</h5>
+            <p>Penetration Tester, Malware Analyst</p>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Me Section -->
+<div class="container mt-5 fade-in-section border-dark" id="contact">
+  <div class="card shadow">
+    <div class="card-body p-4">
+      <h2 class="card-title mb-4 text-center">Contact Me</h2>
+      <p class="text-dark">Feel free to reach out if you have any 
+      questions or collaboration opportunities! I'm always excited to connect with fellow 
+      developers and explore new projects. You can contact me in email or through my social pages. </p>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control border border-dark" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control border border-dark" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control border border-dark" id="message" rows="5" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary border-dark">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-primary btn-floating rounded-circle" id="scrollToTopBtn" style="position: fixed; bottom: 20px; right: 20px; display: none; z-index: 1000;">
+  <i class="bi bi-arrow-up"></i>
+</button>
+<!-- Bootstrap Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
